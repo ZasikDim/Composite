@@ -19,46 +19,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aQJ-iv-S38">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="143" id="qzl-gv-wEb" customClass="Cell" customModule="Composite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="143"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qzl-gv-wEb" id="86D-Yh-hGJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-HJ-t7G">
-                                                    <rect key="frame" x="10" y="10" width="394" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="gYu-a4-kJl"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVv-jX-I9u">
-                                                    <rect key="frame" x="10" y="60" width="394" height="73"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="nVv-jX-I9u" secondAttribute="bottom" constant="10" id="Mfb-iE-43e"/>
-                                                <constraint firstItem="uB2-HJ-t7G" firstAttribute="top" secondItem="86D-Yh-hGJ" secondAttribute="top" constant="10" id="Rbq-Nz-lhd"/>
-                                                <constraint firstAttribute="trailing" secondItem="nVv-jX-I9u" secondAttribute="trailing" constant="10" id="YI8-wc-Fpp"/>
-                                                <constraint firstItem="nVv-jX-I9u" firstAttribute="leading" secondItem="86D-Yh-hGJ" secondAttribute="leading" constant="10" id="YhR-Nj-Ud0"/>
-                                                <constraint firstItem="uB2-HJ-t7G" firstAttribute="leading" secondItem="86D-Yh-hGJ" secondAttribute="leading" constant="10" id="cUt-TX-iFo"/>
-                                                <constraint firstItem="nVv-jX-I9u" firstAttribute="top" secondItem="uB2-HJ-t7G" secondAttribute="bottom" constant="10" id="hBM-AK-qlE"/>
-                                                <constraint firstAttribute="trailing" secondItem="uB2-HJ-t7G" secondAttribute="trailing" constant="10" id="tIA-yF-179"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="countLable" destination="nVv-jX-I9u" id="lpK-ae-T8f"/>
-                                            <outlet property="nameLable" destination="uB2-HJ-t7G" id="qDc-kJ-awF"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -71,6 +31,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Z71-lX-UPR">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="hcw-Gw-WKO">
+                            <connections>
+                                <action selector="backTapped:" destination="BYZ-38-t0r" id="9Nc-Ew-kjr"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" springLoaded="YES" style="done" systemItem="add" id="jLn-jN-Pzp">
                             <color key="tintColor" systemColor="tintColor"/>
                             <connections>

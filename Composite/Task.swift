@@ -6,8 +6,8 @@
 //
 
 protocol Task {
-    
     var name: String { get set }
+    var subtasks: [Task] { get set }
     func showComponent() -> Any
     func addComponent(task: Task)
     func contentCount() -> Int
@@ -15,25 +15,25 @@ protocol Task {
 }
 
 class MyTask: Task {
+    
     var name: String
+    var subtasks = [Task]()
+    var isRootTask = false
     
     init(name: String) {
         self.name = name
     }
     
-    private var tasks = [Task]()
-    
     func showComponent() -> Any {
-        return tasks
+        return subtasks
     }
     
     func addComponent(task: Task) {
-        tasks.append(task)
+        subtasks.append(task)
     }
     
     func contentCount() -> Int {
-        return tasks.count
+        return subtasks.count
     }
-    
     
 }

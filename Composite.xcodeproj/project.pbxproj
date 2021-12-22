@@ -14,7 +14,9 @@
 		0FFEF4232770C0810095CD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFEF4222770C0810095CD58 /* Assets.xcassets */; };
 		0FFEF4262770C0810095CD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFEF4242770C0810095CD58 /* LaunchScreen.storyboard */; };
 		0FFEF42E2770C5A20095CD58 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFEF42D2770C5A20095CD58 /* Task.swift */; };
-		0FFEF4302770CE1E0095CD58 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFEF42F2770CE1E0095CD58 /* Cell.swift */; };
+		0FFEF434277234F00095CD58 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFEF433277234F00095CD58 /* TaskList.swift */; };
+		0FFEF43A27737ACE0095CD58 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFEF43827737ACE0095CD58 /* TaskCell.swift */; };
+		0FFEF43B27737ACE0095CD58 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FFEF43927737ACE0095CD58 /* TaskCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		0FFEF4252770C0810095CD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FFEF4272770C0810095CD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FFEF42D2770C5A20095CD58 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		0FFEF42F2770CE1E0095CD58 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		0FFEF433277234F00095CD58 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		0FFEF43827737ACE0095CD58 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		0FFEF43927737ACE0095CD58 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +66,33 @@
 			children = (
 				0FFEF4192770C0800095CD58 /* AppDelegate.swift */,
 				0FFEF41B2770C0800095CD58 /* SceneDelegate.swift */,
-				0FFEF41D2770C0800095CD58 /* ViewController.swift */,
-				0FFEF42F2770CE1E0095CD58 /* Cell.swift */,
+				0FFEF435277235670095CD58 /* Singleton */,
 				0FFEF42D2770C5A20095CD58 /* Task.swift */,
+				0FFEF43C27738D930095CD58 /* VIew */,
 				0FFEF41F2770C0800095CD58 /* Main.storyboard */,
 				0FFEF4222770C0810095CD58 /* Assets.xcassets */,
 				0FFEF4242770C0810095CD58 /* LaunchScreen.storyboard */,
 				0FFEF4272770C0810095CD58 /* Info.plist */,
 			);
 			path = Composite;
+			sourceTree = "<group>";
+		};
+		0FFEF435277235670095CD58 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				0FFEF433277234F00095CD58 /* TaskList.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		0FFEF43C27738D930095CD58 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				0FFEF41D2770C0800095CD58 /* ViewController.swift */,
+				0FFEF43827737ACE0095CD58 /* TaskCell.swift */,
+				0FFEF43927737ACE0095CD58 /* TaskCell.xib */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFEF43B27737ACE0095CD58 /* TaskCell.xib in Resources */,
 				0FFEF4262770C0810095CD58 /* LaunchScreen.storyboard in Resources */,
 				0FFEF4232770C0810095CD58 /* Assets.xcassets in Resources */,
 				0FFEF4212770C0800095CD58 /* Main.storyboard in Resources */,
@@ -144,9 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFEF434277234F00095CD58 /* TaskList.swift in Sources */,
+				0FFEF43A27737ACE0095CD58 /* TaskCell.swift in Sources */,
 				0FFEF41E2770C0800095CD58 /* ViewController.swift in Sources */,
 				0FFEF41A2770C0800095CD58 /* AppDelegate.swift in Sources */,
-				0FFEF4302770CE1E0095CD58 /* Cell.swift in Sources */,
 				0FFEF42E2770C5A20095CD58 /* Task.swift in Sources */,
 				0FFEF41C2770C0800095CD58 /* SceneDelegate.swift in Sources */,
 			);
